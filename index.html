@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Greeting</title>
+    <style>
+        /* NOTE: I only tested this on Google Chrome. */
+
+        body {
+            background: #FFF5E1;
+            font-family: 'Fira Code', monospace;
+        }
+
+        .container {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* Title 1 with bouncing effect */
+        .container h1:nth-child(1) {
+            color: #FF7043;
+            font-family: 'Fira Code', monospace;
+            font-weight: 800;
+            font-size: 30px;
+            margin: 0 auto;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: bounce-in 2s ease-in-out forwards;
+        }
+
+        /* Title 2 with slide-in effect */
+        .container h1:nth-child(2) {
+            opacity: 0;
+            font-family: "Work Sans", sans-serif;
+            margin: 0 auto;
+            background: linear-gradient(to right, #FF4081, #FF80AB);
+            font-weight: 800;
+            font-size: 80px;
+            width: 800px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            overflow: hidden;
+            animation: slide-in 2.5s ease-in-out forwards 1.5s;
+        }
+
+        /* Title 3 with zoom effect */
+        .container h1:nth-child(3) {
+            opacity: 0;
+            font-family: "Work Sans", sans-serif;
+            margin: 0 auto;
+            background: linear-gradient(to right, #FFD700, #FFEA00);
+            font-weight: 800;
+            font-size: 70px;
+            width: 800px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            overflow: hidden;
+            animation: zoom-in 2s ease-in-out forwards 3s;
+        }
+
+        .textbox {
+            background-color: white;
+            border-radius: 15px;
+            padding: 15px;
+            margin: 40px auto;
+            width: 600px;
+            text-align: left;
+            border: 2px solid #FF7043;
+            font-family: 'Fira Code', monospace;
+            font-weight: 800;
+            color: #FF7043;
+            font-size: 18px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            opacity: 0; /* Start hidden */
+            animation: fadeIn 1.5s forwards 5s; /* Fade in after all animations */
+        }
+
+        /* Bounce-in keyframes */
+        @keyframes bounce-in {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0.8;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Slide-in keyframes */
+        @keyframes slide-in {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Zoom-in keyframes */
+        @keyframes zoom-in {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Fade-in keyframes for the textbox */
+        @keyframes fadeIn {
+            to {
+                opacity: 1; /* Fade to fully visible */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>To the Sợ Gián Person</h1>
+        <h1>Happy Birthday!</h1>
+        <h1>Nguyen Ngoc Anh</h1>
+        <div class="textbox">
+            Hellooo, hôm trước m vừa bảo là cũng muốn có thiệp online nên thôi trong lúc bạn chưa tìm đc ai làm IT thân cận thì thân già này sẽ là người làm giúp vậy :3
+            <br><br>
+            Nói chung đó giờ thì với tôi bạn vẫn là 1 con bé khá là được nuông chiều và hơi vô tree, nhưng mà năm nay anh thấy em có sự thay đổi khá là nhiều và anh assume em cũng đã học được rất nhiều điều quý giá từ đó. 
+            Cảm giác em đủ sự tự tin để không chần chừ nắm lấy cơ hội (phuơng châm sống của anh là không đánh mất bất kỳ cơ hội nào) nên anh cảm giác em đang có những thay đổi rất là tích cực và đang trên con đường hoàn thiện 
+            bản thân. Tôi rất tự hào về bạn ở khoảng này nhé, bth anh hay chửi mắng thế th chứ hy vọng bạn không hiểu sai ý tôi mà là tôi đang suggest cho bạn một sóo điều bạn có thể thử thông qua các câu chửi đó tại a thấy nói thẳng
+            thừng thì sến quá. 
+            <br><br>
+            Thôi thì tôi xin phép đến phần lời chúc. Chúc Éng năm mới tuổi mới sẽ gặp được nhiều may mắn, thuận lợi trong cả công việc lẫn sự nghiệp nếu em có ý định tìm kiếm một cơ hội việc làm nào đó, dĩ nhiên là phải cao hơn 4tr r nhé. Đồng
+            thời cũng hy vọng là e sẽ sớm tìm được hạnh phúk đời mình mặc dù em biết khá rõ là nó ở đâu r (hoặc là không :D ???) Hy vọng là em sẽ càng ngày càng cố gắng hoàn thiện bản thân và ngày càng phát triển nhiều hơn để trở thành một 
+            phiên bản hoàn hảo hơn của chính mình nhá. 
+            <br><br>
+            Hy vọng là tôi với bạn vẫn vô tri vô giác như ngày đầu gặp tại lần trc nchuyen bạn kêu bạn cấn cấn với tui tui cũng quạo quạo á, gặp lại đấm chetcha m h :) thích kêu chơi đ hợp kh ? vả cái cho vêu mồm h =.=
+            <br><br>
+            Chào thân ái và quyết thắng
+            <br><br>
+            Anh Da Đen - Nguyễn Đức Đại
+        </div>
+    </div>
+</body>
+</html>
